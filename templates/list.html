@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ list_title }} | GSP{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/cards.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/search.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="list_details text-rtl">
+    <h1 class="list_title">{{ list_title }}</h1>
+    <p class="list_description">{{ list_description }}</p>
+</div>
+
+{% if session["is_admin"] == True: %}
+    <div class="admin text-rtl">
+        <a href="{{ url_for('new', recommend=path, _external=True) }}">
+            <h2>
+                {% if get_locale() == 'en' %}
+                    {{ _('CreateNew')}} <span>{{ path }}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"/>
+                    </svg>
+                {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="transform: scaleX(-1);">
+                        <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"/>
+                    </svg>
+                    {{ _('CreateNew')}}
+                {% endif %}
+            </h2>
+        </a>
+    </div>
+{% endif %}
+
+<form action="{{ url_for('search') }}" method="get" class="search-form" style="margin-top: 95px; margin-bottom: 120px;">
+    <div class="searchBox">
+        <input type="text" name="item" value="{{ path }}" hidden>
+        <input type="text" name="query" placeholder="{{ _('Search') }} {% if get_locale() == 'en' %} {{ path }}s... {% endif %}" class="searchInput">
+        <button type="submit" class="searchButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                <path fill="currentColor" d="M232.49 215.51L185 168a92.12 92.12 0 1 0-17 17l47.53 47.54a12 12 0 0 0 17-17ZM44 112a68 68 0 1 1 68 68a68.07 68.07 0 0 1-68-68"/>
+            </svg>
+        </button>
+    </div>
+</form>
+
+<div class="wrapper">
+    <ul class="cards">
+        {% for item in items %}
+            <a href="{{ url_for(path, id=item.id) }}">
+                <li>
+                    <div class="item_title">
+                        <h2>{{ item.title }}</h2>
+                        {% if item_type == 'all_services' %}
+                            {% set department = Department.query.filter_by(id=item.department_id).first() %}
+                            {% if department %}
+                                <h4>{{ department.title }}</h4>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <p>{{ item.description }}</p>
+                </li>
+            </a>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

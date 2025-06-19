@@ -1,0 +1,599 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GovServicesPortal v1\n"
+"Report-Msgid-Bugs-To: uosyph@gmail.com\n"
+"POT-Creation-Date: 2024-04-21 17:11+0200\n"
+"PO-Revision-Date: 2024-04-21 17:49+0200\n"
+"Last-Translator: Yousef Saeed <uosyph@gmail.com>\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: views.py
+msgid "UserAlreadyExists"
+msgstr "इस आईडी के साथ एक उपयोगकर्ता पहले से ही पंजीकृत है।"
+
+msgid "IncorrectIDFormat"
+msgstr "आपने गलत आईडी प्रारूप दर्ज किया है।"
+
+msgid "InvalidPasswordLength"
+msgstr "आपका पासवर्ड 6 से 28 वर्णों के बीच होना चाहिए।"
+
+msgid "PasswordsDoNotMatch"
+msgstr "आपके पासवर्ड मेल नहीं खा रहे हैं। कृपया पुनः प्रयास करें।"
+
+msgid "EmptyFields"
+msgstr "कृपया सभी आवश्यक फ़ील्ड भरें।"
+
+msgid "AccountCreated"
+msgstr "आपका खाता सफलतापूर्वक बनाया गया है।"
+
+msgid "AccountNotFound"
+msgstr "प्रदान की गई जानकारी के अनुसार कोई खाता नहीं मिला।"
+
+msgid "FillForm"
+msgstr "कृपया आगे बढ़ने से पहले फ़ॉर्म भरना सुनिश्चित करें।"
+
+msgid "LoginSuccess"
+msgstr "लॉगिन सफल रहा।"
+
+msgid "IncorrectPassword"
+msgstr "गलत पासवर्ड। कृपया पुनः प्रयास करें।"
+
+
+msgid "AccountInfoUpdated"
+msgstr "आपकी खाता जानकारी सफलतापूर्वक अपडेट की गई है।"
+
+msgid "PasswordLengthError"
+msgstr "आपका पासवर्ड 6 से 28 वर्णों के बीच होना चाहिए।"
+
+msgid "PasswordsDoNotMatchError"
+msgstr "पासवर्ड मेल नहीं खा रहे हैं। कृपया पुनः प्रयास करें।"
+
+msgid "SamePasswordError"
+msgstr "आप नया पासवर्ड वही नहीं रख सकते जो पहले से है।"
+
+msgid "PasswordUpdated"
+msgstr "पासवर्ड सफलतापूर्वक अपडेट किया गया।"
+
+msgid "IncorrectPasswordError"
+msgstr "गलत पासवर्ड दर्ज किया गया। कृपया पुनः प्रयास करें।"
+
+msgid "FillFormError"
+msgstr "कृपया आगे बढ़ने से पहले फ़ॉर्म भरना सुनिश्चित करें।"
+
+msgid "DuplicateNameError"
+msgstr "इसी नाम की सेवा या विभाग पहले से मौजूद है।"
+
+msgid "DepartmentCreated"
+msgstr "विभाग सफलतापूर्वक बनाया गया।"
+
+msgid "ServiceCreated"
+msgstr "सेवा सफलतापूर्वक बनाई गई।"
+
+msgid "ItemUpdatedSuccess"
+msgstr "{} सफलतापूर्वक अपडेट किया गया।"
+
+msgid "SearchTitle"
+msgstr "विभाग या सेवा खोजें"
+
+msgid "SearchPlaceholder"
+msgstr "विभाग और सेवाएं खोजें..."
+
+msgid "SearchTitleItem"
+msgstr "{} खोजें"
+
+msgid "SearchPlaceholderItem"
+msgstr "{} खोजें..."
+
+msgid "NoDepartmentsFound"
+msgstr "कोई विभाग नहीं मिला।"
+
+msgid "NoServicesFound"
+msgstr "कोई सेवा नहीं मिली।"
+
+msgid "NoItemsFound"
+msgstr "कोई विभाग या सेवा नहीं मिली।"
+
+msgid "OrderCreatedSuccess"
+msgstr "ऑर्डर सफलतापूर्वक बनाया गया।"
+
+msgid "OrderFinishedSuccess"
+msgstr "ऑर्डर को सफलतापूर्वक पूर्ण के रूप में चिह्नित किया गया।"
+
+msgid "OrderDeletedSuccess"
+msgstr "संदर्भ संख्या <span class='attention-order-id'>{order_id}</span> वाला ऑर्डर सफलतापूर्वक हटाया गया।"
+
+msgid "FeedbackReceivedSuccess"
+msgstr "हमें आपका संदेश प्राप्त हो गया है। हम जल्द ही आपसे संपर्क करेंगे।"
+
+msgid "DepartmentsListDescription"
+msgstr "आप किसी विभाग को चुनकर उसकी विस्तृत जानकारी या सेवाएं देख सकते हैं।"
+
+
+msgid "ServicesListDescription"
+msgstr "आप अतिरिक्त जानकारी प्राप्त करने या ऑर्डर देने के लिए किसी सेवा का चयन कर सकते हैं।"
+
+msgid "DeptServices"
+msgstr "सेवाएं"
+
+#: templates/base.html
+msgid "Departments"
+msgstr "विभाग"
+
+msgid "Services"
+msgstr "सेवाएं"
+
+msgid "New"
+msgstr "नया"
+
+msgid "NewOrder"
+msgstr "नया ऑर्डर"
+
+msgid "MyOrders"
+msgstr "मेरे ऑर्डर"
+
+msgid "Orders"
+msgstr "ऑर्डर"
+
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+
+#: templates/account.html
+msgid "AccountSettings"
+msgstr "खाता सेटिंग्स"
+
+msgid "SignUp"
+msgstr "साइन अप"
+
+msgid "Login"
+msgstr "लॉगिन"
+
+msgid "ContactUs"
+msgstr "हमसे संपर्क करें"
+
+msgid "About"
+msgstr "परिचय"
+
+msgid "QuickLinks"
+msgstr "त्वरित लिंक"
+
+msgid "AboutInfo"
+msgstr "गवर्नमेंट सर्विसेज़ ऑनलाइन पोर्टल आपके लिए महत्वपूर्ण सरकारी सेवाओं तक सुविधाजनक और सुरक्षित पहुँच का भरोसेमंद माध्यम है। हमारा प्लेटफ़ॉर्म एक सहज अनुभव सुनिश्चित करता है, जिससे नागरिक अपने घर या कार्यालय से ही लेन-देन कुशलतापूर्वक पूरा कर सकते हैं। सरकारी एजेंसियों के साथ आपके संपर्क को सरल बनाएं और GovServicesPortal के साथ ऑनलाइन सेवा डिलीवरी की सुविधा का अनुभव करें। आज ही हमारी व्यापक सेवाओं की श्रृंखला को एक्सप्लोर करें और सरकारी सेवाओं से जुड़ने का एक अधिक कुशल तरीका खोजें।"
+
+msgid "Copyright"
+msgstr "कॉपीराइट"
+
+msgid "Rights"
+msgstr "सर्वाधिकार सुरक्षित"
+
+#: templates/404.html
+msgid "NotFoundMessage"
+msgstr "आप जिस पृष्ठ तक पहुँचने का प्रयास कर रहे हैं, वह नहीं मिला।"
+
+msgid "NotFoundReason"
+msgstr "यह हटाया गया हो सकता है, नाम बदला गया हो या अस्थायी रूप से अनुपलब्ध हो सकता है।"
+
+msgid "CheckURL"
+msgstr "कृपया URL में कोई त्रुटि तो नहीं है, यह जांचें या ब्राउज़िंग जारी रखने के लिए होमपेज पर लौटें।"
+
+msgid "ContactSupport"
+msgstr "यदि आपको लगता है कि आप गलती से इस पृष्ठ पर पहुंचे हैं या आपको अतिरिक्त सहायता की आवश्यकता है, तो कृपया हमारी सहायता टीम से संपर्क करें।"
+
+msgid "ThankYou"
+msgstr "आपके धैर्य और समझदारी के लिए धन्यवाद।"
+
+msgid "ReturnHome"
+msgstr "होम पर लौटें"
+
+msgid "ManageProfileAccountPreferences"
+msgstr "अपनी प्रोफ़ाइल और खाता वरीयताएं प्रबंधित करें।"
+
+msgid "VisitYourProfile"
+msgstr "अपनी प्रोफ़ाइल देखें"
+
+msgid "Account"
+msgstr "खाता"
+
+
+msgid "Security"
+msgstr "सुरक्षा"
+
+msgid "Privacy"
+msgstr "गोपनीयता"
+
+msgid "PersonalInformation"
+msgstr "व्यक्तिगत जानकारी"
+
+msgid "CustomizePersonalInformation"
+msgstr "अपनी व्यक्तिगत जानकारी को अनुकूलित करें।"
+
+msgid "NationalID"
+msgstr "राष्ट्रीय पहचान पत्र"
+
+msgid "FullName"
+msgstr "पूरा नाम"
+
+msgid "PhoneNumber"
+msgstr "फोन नंबर"
+
+msgid "Email"
+msgstr "ईमेल"
+
+msgid "Address"
+msgstr "पता"
+
+msgid "UpdatePersonalInfo"
+msgstr "व्यक्तिगत जानकारी अपडेट करें"
+
+msgid "ChangePassword"
+msgstr "पासवर्ड बदलें"
+
+msgid "UpdatePasswordSecurely"
+msgstr "अपना पासवर्ड सुरक्षित रूप से अपडेट करें।"
+
+msgid "OldPassword"
+msgstr "पुराना पासवर्ड"
+
+msgid "NewPassword"
+msgstr "नया पासवर्ड"
+
+msgid "ConfirmPassword"
+msgstr "पासवर्ड की पुष्टि करें"
+
+msgid "UpdatePassword"
+msgstr "पासवर्ड अपडेट करें"
+
+msgid "DeleteAccount"
+msgstr "खाता हटाएं"
+
+msgid "PermanentlyRemoveAccount"
+msgstr "अपने खाते को स्थायी रूप से हटाएं।"
+
+msgid "EnterYourPassword"
+msgstr "अपना पासवर्ड दर्ज करें"
+
+msgid "NoteDeleteAccount"
+msgstr "कृपया ध्यान दें कि यह प्रक्रिया अपरिवर्तनीय है और आपके खाते तथा संबंधित सभी ऑर्डर्स को हटा देगी।"
+
+#: templates/profile.html
+msgid "UserProfile"
+msgstr "उपयोगकर्ता प्रोफ़ाइल"
+
+msgid "IsAdmin"
+msgstr "क्या व्यवस्थापक है"
+
+msgid "Yes"
+msgstr "हाँ"
+
+msgid "No"
+msgstr "नहीं"
+
+msgid "WouldYouLikeToEditProfile"
+msgstr "क्या आप अपनी प्रोफ़ाइल संपादित करना चाहेंगे?"
+
+msgid "ClickHere"
+msgstr "यहाँ क्लिक करें"
+
+msgid "ToAccessProfileEditingPage"
+msgstr "प्रोफ़ाइल संपादन पृष्ठ तक पहुंचने के लिए।"
+
+msgid "Logout"
+msgstr "लॉगआउट"
+
+#: templates/contact.html
+msgid "SendFeedbackComplaints"
+msgstr "हमें अपनी प्रतिक्रिया या शिकायतें भेजें।"
+
+
+msgid "Name"
+msgstr "नाम"
+
+msgid "Phone"
+msgstr "फोन"
+
+msgid "Subject"
+msgstr "विषय"
+
+msgid "Message"
+msgstr "संदेश"
+
+msgid "Send"
+msgstr "भेजें"
+
+#: templates/search.html
+msgid "DepartmentsMatchSearch"
+msgstr "आपके खोज मानदंडों से मेल खाते सभी विभाग।"
+
+msgid "ServicesMatchSearch"
+msgstr "आपके खोज मानदंडों से मेल खाते सभी सेवाएं।"
+
+#: templates/register.html
+msgid "Password"
+msgstr "पासवर्ड"
+
+msgid "Register"
+msgstr "पंजीकरण करें"
+
+msgid "AlreadyHaveAccount"
+msgstr "क्या आपके पास पहले से खाता है?"
+
+msgid "LoginHere"
+msgstr "यहाँ लॉगिन करें"
+
+#: templates/login.html
+msgid "DontHaveAccount"
+msgstr "क्या आपके पास अभी खाता नहीं है?"
+
+msgid "RegisterHere"
+msgstr "यहाँ पंजीकरण करें"
+
+#: templates/edit.html
+msgid "Select"
+msgstr "कृपया चयन करें"
+
+msgid "Or"
+msgstr "या"
+
+msgid "ToEdit"
+msgstr "संपादित करने के लिए।"
+
+msgid "Title"
+msgstr "शीर्षक"
+
+msgid "BriefDescription"
+msgstr "संक्षिप्त विवरण"
+
+msgid "ExtendedDescription"
+msgstr "विस्तृत विवरण"
+
+msgid "SupportsMarkdown"
+msgstr "मार्कडाउन का समर्थन करता है"
+
+msgid "Update"
+msgstr "अपडेट करें"
+
+msgid "Delete"
+msgstr "हटाएं"
+
+msgid "AreYouSureDelete"
+msgstr "क्या आप वाकई इसे हटाना चाहते हैं"
+
+msgid "?"
+msgstr "?"
+
+#: templates/index.html
+msgid "PortalNavigation"
+msgstr "पोर्टल नेविगेशन"
+
+msgid "Home"
+msgstr "मुखपृष्ठ"
+
+msgid "AccessEssentialServices"
+msgstr "जरूरी सरकारी सेवाओं तक अपने घर या कार्यालय से आसानी से पहुँचें।"
+
+msgid "DiscoverDepartments"
+msgstr "विभिन्न विभागों और उनकी सेवाओं की जानकारी प्राप्त करें।"
+
+msgid "ExploreServices"
+msgstr "ऑनलाइन उपलब्ध सेवाओं की विविधता का अन्वेषण करें।"
+
+msgid "InitiateNewOrder"
+msgstr "हमारे पोर्टल से किसी भी सेवा के लिए नया आदेश शुरू करें।"
+
+msgid "ViewManageOrders"
+msgstr "अपने आदेशों और लेन-देन को देखें और प्रबंधित करें।"
+
+msgid "AddNewDepartmentService"
+msgstr "पोर्टल पर उपलब्ध सेवाओं की श्रृंखला बढ़ाने के लिए नया विभाग या सेवा जोड़ें।"
+
+msgid "AccessOrders"
+msgstr "प्रबंधन और प्रक्रिया के लिए उपयोगकर्ताओं द्वारा भेजे गए आदेशों तक पहुँचें।"
+
+msgid "AccessUpdateProfile"
+msgstr "अपने प्रोफ़ाइल विवरण तक पहुँचें और उन्हें अपडेट करें, ताकि आपकी जानकारी सटीक रहे।"
+
+
+msgid "CustomizeAccountSettings"
+msgstr "अपने खाते की प्राथमिकताओं और सुरक्षा सेटिंग्स को अनुकूलित करें।"
+
+msgid "RegisterForPortal"
+msgstr "सरकारी सेवाओं के पोर्टल के लिए पंजीकरण करें।"
+
+msgid "AccessAccountServices"
+msgstr "अपना खाता एक्सेस करें और हमारी सेवाओं का उपयोग शुरू करें।"
+
+msgid "ReachOutSupport"
+msgstr "सहायता या पूछताछ के लिए हमारी समर्पित सहायता टीम से संपर्क करें।"
+
+msgid "PopularServices"
+msgstr "लोकप्रिय सेवाएं"
+
+msgid "HappeningNow"
+msgstr "इस समय चल रहा है"
+
+msgid "TotalOrders"
+msgstr "कुल आदेश"
+
+msgid "OrdersLastWeek"
+msgstr "पिछले सप्ताह के आदेश"
+
+msgid "TotalUsers"
+msgstr "कुल उपयोगकर्ता"
+
+msgid "TotalServices"
+msgstr "कुल सेवाएं"
+
+msgid "NewSignUp"
+msgstr "साइन अप करें"
+
+msgid "NewSignUpDescription"
+msgstr ""
+"हमारे पोर्टल पर साइन अप करना तेज़ और आसान है। बस 'साइन अप' बटन पर क्लिक करें "
+"और आवश्यक जानकारी भरें ताकि आप अपना खाता बना सकें। एक बार पंजीकरण प्रक्रिया पूरी हो जाने पर, "
+"आप ऑनलाइन ऑर्डर करने के लिए उपलब्ध विभिन्न सरकारी सेवाओं का लाभ उठा सकते हैं।"
+
+msgid "ExploreAllServices"
+msgstr "सभी सेवाओं का अन्वेषण करें"
+
+msgid "ExploreAllServicesDescription"
+msgstr ""
+"एक बार जब आप अपने खाते में लॉग इन कर लें, तो हमारे पोर्टल पर दी जा रही विभिन्न सेवाओं "
+"का अन्वेषण करें। दस्तावेज़ आवेदन से लेकर कर भुगतान और व्यावसायिक सेवाओं तक, आपको आपकी "
+"जरूरत की हर चीज़ कुछ ही क्लिक में मिल जाएगी। उन सेवाओं को खोजें जो आपकी आवश्यकताओं को पूरा करती हैं।"
+
+msgid "OrderTheService"
+msgstr "सेवा का आदेश दें"
+
+msgid "OrderTheServiceDescription"
+msgstr ""
+"जब आपको आवश्यक सेवा मिल जाए, तो ऑर्डर देना बहुत आसान है। सूची से वांछित सेवा का चयन करें "
+"और आवश्यक जानकारी या दस्तावेज़ प्रस्तुत करने के लिए निर्देशों का पालन करें। एक बार आपका ऑर्डर "
+"जमा हो जाने पर, हमारी टीम इसे शीघ्रता से प्रक्रिया में लेगी और आपको हर चरण पर इसकी स्थिति से अवगत कराएगी।"
+
+msgid "SearchIn"
+msgstr "खोजें"
+
+msgid "Service"
+msgstr "सेवा"
+
+msgid "DepartmentsAnd"
+msgstr "विभाग और"
+
+msgid "WelcomeMessage"
+msgstr "सरकारी सेवाओं और जानकारी तक पहुँच का प्रमुख केंद्र में आपका स्वागत है।"
+
+#: templates/listing.html
+msgid "Search"
+msgstr "खोजें"
+
+msgid "ViewAll"
+msgstr "इस विभाग द्वारा प्रदान की गई सभी सेवाओं को देखें"
+
+msgid "OrderService"
+msgstr "सेवा का आदेश दें"
+
+msgid "EditThis"
+msgstr "इसे संपादित करें"
+
+#: templates/list.html
+msgid "CreateNew"
+msgstr "नया बनाएं"
+
+#: templates/orders.html
+msgid "UserOrdersTitle"
+msgstr "उपयोगकर्ता आदेश"
+
+msgid "UserOrdersDescription"
+msgstr "उपयोगकर्ताओं द्वारा प्रस्तुत सभी सक्रिय आदेशों को देखें।"
+
+msgid "ReferenceNumber"
+msgstr "संदर्भ संख्या:"
+
+msgid "OrderAt"
+msgstr "आदेश समय:"
+
+msgid "Status"
+msgstr "स्थिति:"
+
+msgid "Active"
+msgstr "सक्रिय"
+
+
+msgid "NoOrdersLeft"
+msgstr "कोई आदेश शेष नहीं हैं।"
+
+#: templates/user_order.html
+msgid "OrderFor"
+msgstr "इसके लिए आदेश:"
+
+msgid "UserNationalID"
+msgstr "उपयोगकर्ता राष्ट्रीय पहचान संख्या:"
+
+msgid "DoneAt"
+msgstr "समाप्त समय:"
+
+msgid "DetailsIncluded"
+msgstr "शामिल विवरण:"
+
+msgid "FilesIncluded"
+msgstr "शामिल फाइलें:"
+
+msgid "Finished"
+msgstr "समाप्त"
+
+msgid "FinishOrder"
+msgstr "आदेश समाप्त करें"
+
+msgid "DeleteOrder"
+msgstr "आदेश हटाएँ"
+
+#: templates/order.html
+msgid "ReferenceMessage"
+msgstr ""
+"आपसे आगे चलकर कोई लेनदेन पूरा करने, दस्तावेज़ प्राप्त करने, या अपना आदेश अंतिम रूप देने के लिए "
+"आपका संदर्भ संख्या पूछी जा सकती है।"
+
+#: templates/my_orders.html
+msgid "MyOrdersDescription"
+msgstr "अपने सभी आदेश देखें, पूर्ण किए गए आदेशों सहित।"
+
+msgid "ActiveOrders"
+msgstr "सक्रिय आदेश"
+
+msgid "FinishedOrders"
+msgstr "पूर्ण किए गए आदेश"
+
+msgid "NoOrdersLift"
+msgstr "आपके पास वर्तमान में कोई आदेश नहीं है।"
+
+#: templates/new.html
+msgid "CreateNewDefaultDescription"
+msgstr "एक नई सेवा या विभाग बनाएँ।"
+
+msgid "CreateNewDescription"
+msgstr "नया बनाएँ"
+
+msgid "Department"
+msgstr "विभाग"
+
+msgid "AssociatedWithDepartment"
+msgstr "विभाग से जुड़ा हुआ"
+
+msgid "NoAssociation"
+msgstr "यह सेवा किसी भी विभाग से जुड़ी नहीं है"
+
+msgid "Create"
+msgstr "बनाएँ"
+
+#: templates/new_order.html
+msgid "CreateOrder"
+msgstr "आदेश बनाएँ"
+
+msgid "CreateOrderDescription"
+msgstr "एक नया आदेश बनाएँ।"
+
+
+msgid "ChooseService"
+msgstr "सेवा चुनें"
+
+msgid "AdditionalDetails"
+msgstr "अतिरिक्त विवरण प्रदान करें"
+
+msgid "UploadFilesTitle"
+msgstr "कृपया सेवा के लिए आवश्यक दस्तावेज़ या फाइलें प्रदान करें"
+
+msgid "DragAndDrop"
+msgstr "खींचें और छोड़ें"
+
+msgid "BrowseFiles"
+msgstr "फाइलें ब्राउज़ करें"
+
+msgid "SubmitAllRequiredFiles"
+msgstr ""
+"कृपया सुनिश्चित करें कि आपने सेवा के लिए आवश्यक सभी दस्तावेज़ जमा किए हैं। "
+"अन्यथा, आपका आदेश उपेक्षित कर दिया जाएगा।"

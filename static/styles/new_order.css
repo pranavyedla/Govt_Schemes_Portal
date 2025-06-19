@@ -1,0 +1,232 @@
+.order-box {
+	color: #2d3436;
+	border: 1px solid #2d343654;
+	margin: auto;
+	margin-top: 40px;
+	width: 85%;
+	padding: 40px;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	margin-bottom: 65px;
+}
+
+.order-box .order-title {
+	margin: 25px auto 10px;
+	padding: 0;
+	font-size: 34px;
+	font-weight: bold;
+	color: #2d3436;
+}
+
+.order-box .order-description {
+	font-size: 18px;
+	color: #666;
+}
+
+.order-box form {
+	margin-top: 40px;
+}
+
+.order-box .option-box {
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.order-box .option-box select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #2d34368c;
+	border-radius: 5px;
+	background-color: transparent;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.order-box .option-box select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.order-box .input-box {
+	position: relative;
+}
+
+.order-box .input-box textarea {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #2d3436;
+	margin-top: 10px;
+	border: 1px solid #2d34368c;
+	border-radius: 5px;
+	outline: none;
+	background: transparent;
+}
+
+.order-box .input-box textarea {
+	resize: vertical;
+	padding: 10px;
+}
+
+.order-box .input-box label {
+	font-size: 16px;
+	color: #2d3436;
+}
+
+.upload-box {
+	margin-top: 35px;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.upload-box .file-upload-label input {
+	display: none;
+}
+
+.upload-box .file-upload-label svg {
+	height: 50px;
+	fill: #2d3436;
+	margin-bottom: 20px;
+}
+
+.upload-box .file-upload-label {
+	cursor: pointer;
+	padding: 30px 70px;
+	border-radius: 40px;
+	border: 1px dashed #2d34368c;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.upload-box .file-upload-label h4 {
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #2d3436;
+}
+
+.upload-box .file-upload-label p {
+	color: #2d3436;
+}
+
+.upload-box .file-upload-design {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.upload-box .browse-button {
+	background-color: #2d3436;
+	padding: 8px 15px;
+	border-radius: 10px;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.upload-box .browse-button:hover {
+	background-color: rgb(14, 14, 14);
+}
+
+#file-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-inline: 25px;
+}
+
+.file-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 10px 10px 0;
+	min-width: 300px;
+	max-width: 300px;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.file-info,
+.file-name,
+.file-size {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.file-info {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2d3436;
+	text-align: center;
+	margin-inline: 15px;
+	max-width: 100%;
+}
+
+.file-name {
+	max-width: 135px;
+}
+
+.file-size {
+	color: #666;
+	font-size: 13px;
+	margin-inline: 5px;
+}
+
+.order-box form .submit-btn {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #6db6c0;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+	border: 1px solid #6db6c0;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.order-box form .submit-btn:hover {
+	background: #6db6c0;
+	color: #fff;
+	box-shadow: 0 0 1px #6db6c018, 0 0 15px #6db6c018, 0 0 20px #6db6c018,
+		0 0 30px #6db6c018;
+}
+
+.order-box .form-msg {
+	color: #2d3436;
+	margin-top: 20px;
+}
+
+.order-box .attention-msg span {
+	color: #ff0000;
+	cursor: default;
+	user-select: none;
+}
+
+.order-box .attention-msg {
+	margin-top: 60px;
+	font-size: 18px;
+}

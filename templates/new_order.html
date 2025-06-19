@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Create a New Application | GSP{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/new_order.css') }}">
+<script src="{{ url_for('static', filename='scripts/fileUpload.js') }}" defer></script>
+{% endblock %}
+
+{% block body %}
+<div class="order-box" {% if get_locale() == 'hi' %} dir="rtl" {% endif %}>
+    <h2 class="order-title">{{ _('New Application') }}</h2>
+    <p class="order-description">{{ _('Write a New Application') }}</p>
+
+    {% if msg: %}<div class="form-msg">{{ msg }}</div>{% endif %}
+
+    <form action="{{ url_for('new_order') }}" method="post" enctype="multipart/form-data">
+        <div class="option-box" id="option-box">
+            <label for="service">{{ _('Choose Scheme') }}</label>
+            <br>
+            <select required id="service" name="service">
+                <option disabled selected value="">{{ _('Choose a Scheme') }}</option>
+                {% for service in services %}
+                    <option value="{{ service.id }}"
+                        {% if 'recommend' in request.args and int(request.args.get('recommend')) == service.id %} selected {% endif %}>
+                        {{ service.title }}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="input-box">
+            <label for="details">{{ _('AdditionalDetails') }}</label>
+            <textarea rows="6" name="details"></textarea>
+        </div>
+        <div class="upload-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <label for="file-input" class="file-upload-label">
+                <h4>{{ _('Please provide the required paperwork or files for the application') }}</h4>
+                <div class="file-upload-design">
+                    <svg viewBox="0 0 640 512" height="1em">
+                        <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z">
+                        </path>
+                    </svg>
+                    <p>{{ _('DragAndDrop') }}</p>
+                    <p>{{ _('Or') }}</p>
+                    <span class="browse-button">{{ _('BrowseFiles') }}</span>
+                </div>
+                <input type="file" id="file-input" name="file" multiple onchange="handleFiles(this.files)">
+            </label>
+            <div id="file-list"></div>
+        </div>
+        <p class="attention-msg">
+            <span>*</span>
+            {{ _('Please make sure you have submitted everything needed for the application. Otherwise, your order will be neglected.') }}
+        </p>
+        <input class="submit-btn" type="submit" value="{{ _('Apply') }}">
+    </form>
+</div>
+{% endblock %}

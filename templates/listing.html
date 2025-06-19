@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ item.title }} | GSP{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/listing.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="item-box text-rtl" {% if get_locale() == 'hi' %} dir="rtl" {% endif %}>
+    {% with msg = get_flashed_messages() %}
+        {% if msg: %}<div class="item-msg">{{ msg[0] }}</div>{% endif %}
+    {% endwith %}
+
+    <div class="item_title">
+        <h2>{{ item.title }}</h2>
+        {% if item.department_id %}
+            {% set department = Department.query.filter_by(id=item.department_id).first() %}
+            <h4>{{ department.title }}</h4>
+        {% endif %}
+    </div>
+
+    <p class="item-desc">{{ item.description }}</p>
+
+    {% if item.readme %}
+        <div class="item-readme markdown" {% if get_locale() == 'hi' %} dir="rtl" {% endif %}>
+            {{ markdown(item.readme) | safe }}
+        </div>
+    {% endif %}
+
+    {% if all_services_url %}
+        <a class="listing-btn" href="{{ all_services_url }}">
+            {{ _('ViewAll') }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" {% if get_locale() == 'hi' %} style="transform: scaleX(-1);" {% endif %}>
+                <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"/>
+            </svg>
+        </a>
+        <br>
+    {% endif %}
+    {% if session['is_admin'] == False %}
+        {% if type == 'service' %}
+            <a class="listing-btn" href="{{ url_for('new_order', recommend=item.id, _external=True) }}" target="_blank">
+                {{ _('OrderService') }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" {% if get_locale() == 'hi' %} style="transform: scaleX(-1);" {% endif %}>
+                    <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"/>
+                </svg>
+            </a>
+        {% endif %}
+    {% elif session['is_admin'] == True %}
+        <a class="listing-btn warning {% if type == 'department' %} wt-department {% endif %}" href="{{ url_for('edit', item=type, id=item.id) }}">
+            {% if get_locale() == 'en' %} {{ _('EditThis') }} {{ type }} {% else %} {{ _('EditThis') }} {% endif %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" {% if get_locale() == 'hi' %} style="transform: scaleX(-1);" {% endif %}>
+                <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"/>
+            </svg>
+        </a>
+    {% endif %}
+</div>
+{% endblock %}

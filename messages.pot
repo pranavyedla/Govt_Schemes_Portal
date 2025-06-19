@@ -1,0 +1,624 @@
+# Translations template for GovServicesPortal.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the GovServicesPortal project.
+# Yousef Saeed <uosyph@gmail.com>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GovServicesPortal v1\n"
+"Report-Msgid-Bugs-To: uosyph@gmail.com\n"
+"POT-Creation-Date: 2024-04-21 17:11+0200\n"
+"PO-Revision-Date: 2024-04-21 17:11+0200\n"
+"Last-Translator: Yousef Saeed <uosyph@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: views.py
+msgid "UserAlreadyExists"
+msgstr ""
+
+msgid "IncorrectIDFormat"
+msgstr ""
+
+msgid "InvalidPasswordLength"
+msgstr ""
+
+msgid "PasswordsDoNotMatch"
+msgstr ""
+
+msgid "EmptyFields"
+msgstr ""
+
+msgid "AccountCreated"
+msgstr ""
+
+msgid "AccountNotFound"
+msgstr ""
+
+msgid "FillForm"
+msgstr ""
+
+msgid "LoginSuccess"
+msgstr ""
+
+msgid "IncorrectPassword"
+msgstr ""
+
+msgid "AccountInfoUpdated"
+msgstr ""
+
+msgid "PasswordLengthError"
+msgstr ""
+
+msgid "PasswordsDoNotMatchError"
+msgstr ""
+
+msgid "SamePasswordError"
+msgstr ""
+
+msgid "PasswordUpdated"
+msgstr ""
+
+msgid "IncorrectPasswordError"
+msgstr ""
+
+msgid "FillFormError"
+msgstr ""
+
+msgid "DuplicateNameError"
+msgstr ""
+
+msgid "DepartmentCreated"
+msgstr ""
+
+msgid "ServiceCreated"
+msgstr ""
+
+msgid "ItemUpdatedSuccess"
+msgstr ""
+
+msgid "FillFormError"
+msgstr ""
+
+msgid "SearchTitle"
+msgstr ""
+
+msgid "SearchPlaceholder"
+msgstr ""
+
+msgid "SearchTitleItem"
+msgstr ""
+
+msgid "SearchPlaceholderItem"
+msgstr ""
+
+msgid "NoDepartmentsFound"
+msgstr ""
+
+msgid "NoServicesFound"
+msgstr ""
+
+msgid "NoItemsFound"
+msgstr ""
+
+msgid "OrderCreatedSuccess"
+msgstr ""
+
+msgid "FillFormError"
+msgstr ""
+
+msgid "OrderFinishedSuccess"
+msgstr ""
+
+msgid "OrderDeletedSuccess"
+msgstr ""
+
+msgid "FeedbackReceivedSuccess"
+msgstr ""
+
+msgid "FillFormError"
+msgstr ""
+
+msgid "DepartmentsListDescription"
+msgstr ""
+
+msgid "ServicesListDescription"
+msgstr ""
+
+msgid "DeptServices"
+msgstr ""
+
+#: templates/base.html
+msgid "Departments"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "NewOrder"
+msgstr ""
+
+msgid "MyOrders"
+msgstr ""
+
+msgid "Orders"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "AccountSettings"
+msgstr ""
+
+msgid "SignUp"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "ContactUs"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "QuickLinks"
+msgstr ""
+
+msgid "AboutInfo"
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+msgid "Rights"
+msgstr ""
+
+#: templates/404.html
+msgid "NotFoundMessage"
+msgstr ""
+
+msgid "NotFoundReason"
+msgstr ""
+
+msgid "CheckURL"
+msgstr ""
+
+msgid "ContactSupport"
+msgstr ""
+
+msgid "ThankYou"
+msgstr ""
+
+msgid "ReturnHome"
+msgstr ""
+
+#: templates/account.html
+msgid "AccountSettings"
+msgstr ""
+
+msgid "ManageProfileAccountPreferences"
+msgstr ""
+
+msgid "VisitYourProfile"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Security"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "PersonalInformation"
+msgstr ""
+
+msgid "CustomizePersonalInformation"
+msgstr ""
+
+msgid "NationalID"
+msgstr ""
+
+msgid "FullName"
+msgstr ""
+
+msgid "PhoneNumber"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "UpdatePersonalInfo"
+msgstr ""
+
+msgid "ChangePassword"
+msgstr ""
+
+msgid "UpdatePasswordSecurely"
+msgstr ""
+
+msgid "OldPassword"
+msgstr ""
+
+msgid "NewPassword"
+msgstr ""
+
+msgid "ConfirmPassword"
+msgstr ""
+
+msgid "UpdatePassword"
+msgstr ""
+
+msgid "DeleteAccount"
+msgstr ""
+
+msgid "PermanentlyRemoveAccount"
+msgstr ""
+
+msgid "EnterYourPassword"
+msgstr ""
+
+msgid "NoteDeleteAccount"
+msgstr ""
+
+#: templates/profile.html
+msgid "UserProfile"
+msgstr ""
+
+msgid "NationalID"
+msgstr ""
+
+msgid "FullName"
+msgstr ""
+
+msgid "PhoneNumber"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "IsAdmin"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "WouldYouLikeToEditProfile"
+msgstr ""
+
+msgid "ClickHere"
+msgstr ""
+
+msgid "ToAccessProfileEditingPage"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+#: templates/contact.html
+msgid "SendFeedbackComplaints"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+#: templates/search.html
+msgid "DepartmentsMatchSearch"
+msgstr ""
+
+msgid "ServicesMatchSearch"
+msgstr ""
+
+#: templates/register.html
+msgid "Password"
+msgstr ""
+
+msgid "Register"
+msgstr ""
+
+msgid "AlreadyHaveAccount"
+msgstr ""
+
+msgid "LoginHere"
+msgstr ""
+
+#: templates/login.html
+msgid "DontHaveAccount"
+msgstr ""
+
+msgid "RegisterHere"
+msgstr ""
+
+#: templates/edit.html
+msgid "Select"
+msgstr ""
+
+msgid "Or"
+msgstr ""
+
+msgid "ToEdit"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "BriefDescription"
+msgstr ""
+
+msgid "ExtendedDescription"
+msgstr ""
+
+msgid "SupportsMarkdown"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "AreYouSureDelete"
+msgstr ""
+
+msgid "?"
+msgstr ""
+
+#: templates/index.html
+msgid "PortalNavigation"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "AccessEssentialServices"
+msgstr ""
+
+msgid "DiscoverDepartments"
+msgstr ""
+
+msgid "ExploreServices"
+msgstr ""
+
+msgid "InitiateNewOrder"
+msgstr ""
+
+msgid "ViewManageOrders"
+msgstr ""
+
+msgid "AddNewDepartmentService"
+msgstr ""
+
+msgid "AccessOrders"
+msgstr ""
+
+msgid "AccessUpdateProfile"
+msgstr ""
+
+msgid "AccountSettings"
+msgstr ""
+
+msgid "CustomizeAccountSettings"
+msgstr ""
+
+msgid "RegisterForPortal"
+msgstr ""
+
+msgid "AccessAccountServices"
+msgstr ""
+
+msgid "ReachOutSupport"
+msgstr ""
+
+msgid "PopularServices"
+msgstr ""
+
+msgid "HappeningNow"
+msgstr ""
+
+msgid "TotalOrders"
+msgstr ""
+
+msgid "OrdersLastWeek"
+msgstr ""
+
+msgid "TotalUsers"
+msgstr ""
+
+msgid "TotalServices"
+msgstr ""
+
+msgid "NewSignUp"
+msgstr ""
+
+msgid "NewSignUpDescription"
+msgstr ""
+
+msgid "ExploreAllServices"
+msgstr ""
+
+msgid "ExploreAllServicesDescription"
+msgstr ""
+
+msgid "OrderTheService"
+msgstr ""
+
+msgid "OrderTheServiceDescription"
+msgstr ""
+
+msgid "SearchIn"
+msgstr ""
+
+msgid "Service"
+msgstr ""
+
+msgid "DepartmentsAnd"
+msgstr ""
+
+msgid "WelcomeMessage"
+msgstr ""
+
+#: templates/listing.html
+msgid "Search"
+msgstr ""
+
+msgid "ViewAll"
+msgstr ""
+
+msgid "OrderService"
+msgstr ""
+
+msgid "EditThis"
+msgstr ""
+
+#: templates/list.html
+msgid "CreateNew"
+msgstr ""
+
+#: templates/orders.html
+msgid "UserOrdersTitle"
+msgstr ""
+
+msgid "UserOrdersDescription"
+msgstr ""
+
+#: templates/orders.html
+msgid "UserOrdersTitle"
+msgstr ""
+
+msgid "UserOrdersDescription"
+msgstr ""
+
+msgid "ReferenceNumber"
+msgstr ""
+
+msgid "OrderAt"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "NoOrdersLeft"
+msgstr ""
+
+#: templates/user_order.html
+msgid "OrderFor"
+msgstr ""
+
+msgid "UserNationalID"
+msgstr ""
+
+msgid "DoneAt"
+msgstr ""
+
+msgid "DetailsIncluded"
+msgstr ""
+
+msgid "FilesIncluded"
+msgstr ""
+
+msgid "Finished"
+msgstr ""
+
+msgid "FinishOrder"
+msgstr ""
+
+msgid "DeleteOrder"
+msgstr ""
+
+#: templates/order.html
+msgid "ReferenceMessage"
+msgstr ""
+
+#: templates/my_orders.html
+msgid "MyOrdersDescription"
+msgstr ""
+
+msgid "ActiveOrders"
+msgstr ""
+
+msgid "FinishedOrders"
+msgstr ""
+
+msgid "NoOrdersLift"
+msgstr ""
+
+#: templates/new.html
+msgid "CreateNewDefaultDescription"
+msgstr ""
+
+msgid "CreateNewDescription"
+msgstr ""
+
+msgid "Department"
+msgstr ""
+
+msgid "AssociatedWithDepartment"
+msgstr ""
+
+msgid "NoAssociation"
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+#: templates/new_order.html
+msgid "CreateOrder"
+msgstr ""
+
+msgid "CreateOrderDescription"
+msgstr ""
+
+msgid "ChooseService"
+msgstr ""
+
+msgid "AdditionalDetails"
+msgstr ""
+
+msgid "UploadFilesTitle"
+msgstr ""
+
+msgid "DragAndDrop"
+msgstr ""
+
+msgid "BrowseFiles"
+msgstr ""
+
+msgid "SubmitAllRequiredFiles"
+msgstr ""
+

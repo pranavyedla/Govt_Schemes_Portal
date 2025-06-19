@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}My Orders | GSP{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/my_orders.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="page_details text-rtl">
+    <h1 class="page_title">{{ _('My Applications') }}</h1>
+    <p class="page_description">{{ _('View all your applications, including completed ones.') }}</p>
+</div>
+
+{% if orders or done_orders %}
+    {% if orders %}
+        <div class="wrapper">
+            <h2 class="wrapper-title">{{ _('ActiveOrders') }}</h2>
+            <ul class="cards">
+                {% for order in orders %}
+                    <a href="{{ url_for('order', id=order.id) }}">
+                        <li>
+                            <div class="order_title">
+                                {% set service = Service.query.filter_by(id=order.service_id).first() %}
+                                <h3>{{ service.title }}</h3>
+                                <h4>{{ order.id }}</h4>
+                            </div>
+                            <p>
+                                <b>{{ _('OrderAt') }}</b>
+                                {% if get_locale() == 'en' %}
+                                    {{ naturaltime(order.start_date) }}
+                                    -
+                                {% endif %}
+                                {% set time = strptime(str(order.start_date), "%Y-%m-%d %H:%M:%S") %}
+                                {{ time.strftime("%d %b, %Y at %I:%M %p") }}
+                            </p>
+                            <p><b>{{ _('Status') }}</b> <span class="status-active">{{ _('Active') }}</span></p>
+                        </li>
+                    </a>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if done_orders %}
+        <div class="wrapper">
+            <h2 class="wrapper-title">{{ _('FinishedOrders') }}</h2>
+            <ul class="cards">
+                {% for order in done_orders %}
+                    <a href="{{ url_for('order', id=order.id) }}">
+                        <li>
+                            <div class="order_title">
+                                {% set service = Service.query.filter_by(id=order.service_id).first() %}
+                                <h3>{{ service.title }}</h3>
+                                <h4>{{ order.id }}</h4>
+                            </div>
+                            <p>
+                                <b>{{ _('OrderAt') }}</b>
+                                {% if get_locale() == 'en' %}
+                                    {{ naturaltime(order.start_date) }}
+                                    -
+                                {% endif %}
+                                {% set time = strptime(str(order.start_date), "%Y-%m-%d %H:%M:%S") %}
+                                {{ time.strftime("%d %b, %Y at %I:%M %p") }}
+                            </p>
+                            <p>
+                                <b>{{ _('DoneAt') }}</b>
+                                {% if get_locale() == 'en' %}
+                                    {{ naturaltime(order.end_date) }}
+                                    -
+                                {% endif %}
+                                {% set time = strptime(str(order.end_date), "%Y-%m-%d %H:%M:%S") %}
+                                {{ time.strftime("%d %b, %Y at %I:%M %p") }}
+                            </p>
+                            <p><b>{{ _('Status') }}</b> <span class="status-done">{{ _('Finished') }}</span></p>
+                        </li>
+                    </a>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% else %}
+    <div class="wrapper">
+        <h2 class="wrapper-title no-orders">{{ _('You currently do not have any applications') }}</h2>
+    </div>
+{% endif %}
+{% endblock %}
