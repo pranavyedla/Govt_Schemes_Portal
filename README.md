@@ -9,6 +9,7 @@ An online portal built with Flask and SQLAlchemy that allows users to browse, se
 - **Browse & search** government schemes by name, category, or eligibility.
 - **View scheme details**, including description, benefits, applying process.
 - **Interactive chatbot**:
+  - [GitHub Repo](https://github.com/pranavyedla/govt_schemes_chatbot) – source code for the integrated chatbot.
   - Ask questions in natural language (e.g., “What schemes are available for students?”).
   - Provides guided responses and scheme suggestions.
   - Powered by a fine-tuned Gemini API, enabling intelligent and context-aware responses.
